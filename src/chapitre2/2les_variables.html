@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="../css/style_base.css">
+        <style>
+            .attention > div {
+                display: grid; 
+                grid-template-columns: auto auto; 
+                column-gap: 1em;
+                row-gap: 0.2em; 
+                margin: 0.5em; 
+                height: min-content;
+            }
+
+            .attention > div > p {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="conteneur_boutons_navigation">
+                <a href="1introduction.html"><button>< Précédent</button></a>
+                <a href="2quiz_variables.html"><button>Prendre le quiz ></button></a>
+            </div>
+            <h1>La programmation de base avec Scratch</h1>
+            <h2>2.1 Les variables</h2>
+            <p>
+                Les variables sont au cœur du concept de données en programmation. Imaginez un jeu vidéo. Votre personnage a une barre de vie, peut-être 
+                un niveau d’expérience, ou un niveau d’attaque. Il aura très certainement une position et ses ennemis auront des statistiques similaires. 
+                Maintenant, imaginez qu’un ennemi attaque le personnage principal. Logiquement, sa barre de vie devra diminuer, mais comment faire ? 
+                C’est là qu’entrent en jeu les variables. Toutes les statistiques énumérées ci-haut sont des exemples de variables. Celles-ci sont composées 
+                de trois éléments : un <i>type</i>, un <i>nom</i> et une <i>valeur</i>.
+            </p>
+            <p>
+                La <i>valeur</i> d’une variable est précisément ce à quoi vous pensez : si x = 3, alors sa valeur sera 3. L’intérêt d’une variable est de 
+                pouvoir stocker cette valeur à un endroit et de pouvoir y accéder ou la modifier par la suite. Ainsi, dans notre exemple plus haut, la <i>vie</i> 
+                de notre héros pourrait être de 10 et, lorsque l’ennemi attaque, on pourrait lui retirer la valeur de son attaque et elle descendrait à 9. Si 
+                elle arrive à 0, alors le héros serait mort.
+            </p>
+            <p>
+                Le <i>nom</i> d’une variable est l’étiquette qu’on donne à la valeur. Par exemple, si je fais référence à la hauteur de Bob, au lieu de constamment 
+                dire « le 1m20 », je dirai « la hauteur de Bob ». Le premier exemple est la valeur de la variable et le deuxième est son nom.
+            </p>
+            <div class="attention">
+                <h4>ATTENTION!</h4>
+                <p>
+                    Assurez-vous de donner des noms descriptifs à vos variables, pour rester cohérent et éviter de vous perdre. Ne donnez pas des noms trop longs non 
+                    plus, votre code ne sera pas plus lisible.
+                </p>
+                <div>
+                    <p style="color:green">vieBob</p>   <p style="color: green;">✓</p>
+                    <p style="color:red;">v</p>     <p style="color: red;">✗ Le nom est trop court et ne décrit pas la variable</p>
+                    <p style="color:red;">laVieDeBobLeHéro</p>  <p style="color:red;">✗ Le nom est beaucoup trop long et rend le code difficile à lire</p>
+                    <p style="color:red;">❤️</p>    <p style="color:red;">✗ Les émojis sont à éviter</p>
+                    <p>arrêtÀVie</p>
+                    <p>
+                        ⚠ Les accents et les caractères spéciaux peuvent causer problème, surtout si vous pensez partager avec des collègues anglophones. Bien 
+                        que les outils soient tout à fait capable de les comprendre (je les utilises tout le temps), certains vous dirons de ne jamais le faire. 
+                        À vos risques et périls.
+                    </p>
+                </div>
+            </div>
+            <h3>Créer une variable</h3>
+            <p>
+                Dans Scratch, créer une variable ne nécessite que de spécifier le nom et la valeur. La valeur indiquera le type de la variable, que nous 
+                verrons un peu plus loin. Pour commencer, ouvrez le menu des variables.
+            </p>
+            <div class="conteneur_image">
+                <img src="../../images/2_1_0_scratch_variables.png">
+                <figcaption>Figure 1 : La section des variables</figcaption>
+            </div>
+            <p>
+                Vous verrez une liste des variables que vous avez créées jusqu’à présent ainsi qu’une liste d’opérations que vous pouvez effectuer sur ces dernières. 
+                Si vous activez la case à cocher à côté de votre variable, sa valeur sera affichée à l’écran : 
+            </p>
+            <div class="conteneur_image">
+                <img src="../../images/2_1_0_scratch_afficher_variable.png">
+                <img src="../../images/2_1_0_scratch_afficher_variable2.png">
+                <figcaption>Figure 2 : (haut) Appuyez sur la case à cocher pour afficher la variable à l'écran (bas)</figcaption>
+            </div>
+            <p>
+                Pour créer une nouvelle variable, appuyez sur « Créer une nouvelle variable » et donnez-lui un nom. Vous la verrez apparaitre dans la liste de variables.
+                L’image ci-dessous montre un aperçu des opérations que vous pouvez effectuer avec votre nouvelle variable : 
+            </p>
+            <div class="conteneur_image">
+                <img src="../../images/2_1_0_scratch_variables_operations.png">
+                <figcaption>Figure 3 : Un aperçus des différentes utilisations d'une variable</figcaption>
+            </div>
+            <h3>Les types</h3>
+            <p>Le <i>type</i> de la variable est un élément très important à garder en tête lors du design des applications. Dans tout langage de programmation, il existe trois types de variable de base :</p>
+            <ul>
+                <li>Les nombres</li>
+                <li>Les booléens</li>
+                <li>Les caractères/phrases</li>
+            </ul>
+            <p>
+                Les nombres sont ce à quoi vous pensez : des nombres mathématiques. Certains langages font la distinction entre des entiers signés (ℕ), 
+                non signés (ℤ) et des réels (ℝ), ainsi que la distinction entre divers niveaux de précision. Dans notre cas, Scratch ne fait pas la distinction 
+                entre les types de nombres, mais gardez ce concept en tête lorsque nous aborderons le Java.
+            </p>
+            <p>
+                Les booléens sont des valeurs qui peuvent être soit vraies soit fausses. On les utilise parfois pour activer ou désactiver diverses options ou 
+                pour représenter un état (ex. vivant ou mort). Ces valeurs viennent avec le concept de logique booléenne, que nous explorerons dans la prochaine 
+                section.
+            </p>
+            <p>
+                Les caractères sont encore une fois évidents : ils sont les lettres de l’alphabet et leurs accents, les caractères spéciaux, les émojis, etc. 
+                Certains langages font la distinction entre un caractère unique et une suite de caractères, mais encore une fois Scratch ne fait pas cette distinction.
+            </p>
+            <p>
+                Certains langages ne permettent pas à une variable de changer de type. C’est par exemple le cas de Java et de C/C++. Dans d’autres langages, le 
+                type est modifiable sans problème, ce qui est le cas de Python, de JavaScript et, dans notre cas, de Scratch. Modifier le type d’une variable 
+                implique simplement d’en changer la valeur. Par exemple, si je crée une nouvelle variable A et que je lui donne la valeur 3, elle est un nombre. 
+                Si, par la suite, je lui donne la valeur « Charlie », elle devient une phrase. En Java et C/C++, cette opération serait illégale.
+            </p>
+            <p>
+                La distinction entre les types de variables est importante non seulement pour la distinction entre leurs comportements, mais aussi pour leur 
+                représentation au niveau de la machine. Nous entrerons plus dans les détails dans le chapitre 9, mais, pour l’instant, sachez que chaque type 
+                de variable est représentée à l’aide d’un nombre. En effet, un booléen est considéré comme faux lorsque la variable vaut 0 et comme vrai, sinon 
+                et chaque caractère possède un code qui permet de déterminer le symbole associé à chaque nombre. Il existe plusieurs standards pour cette liste 
+                de caractères, mais le plus commun de nos jours se nomme Unicode avec son format UTF-8, ainsi le caractère A est représenté par le nombre 65. Il 
+                est aussi important de faire la distinction entre le <i>caractère 1</i> et le <i>nombre 1</i>, car, bien que ce dernier possède la valeur 1, le 
+                premier, selon Unicode, possède la valeur 49.
+            </p>
+            <h3>La conversion de types</h3>
+            <p>
+                Parfois, vous aurez à utiliser une variable d’un certain type, alors que son utilisation nécessite un autre type. Un exemple typique est d’inclure 
+                un nombre dans une phrase : 
+            </p>
+            <div class="conteneur_image">
+                <img src="../../images/2_1_2_scratch_conversion.png">
+                <figcaption>Figure 4 : la conversion d'un nombre en phrase</figcaption>
+            </div>
+            <p>
+                Dans l’exemple ci-dessus, il faut évidemment que ce que le bloc « dire » reçoit soit une phrase, alors que « nPommes » est un nombre. Alors, quelque 
+                part entre les deux, nPommes doit être convertis en phrase. Il existe deux façons de faire cette conversion, la conversion explicite et la conversion 
+                implicite.
+            </p>
+            <p>La conversion explicite prendra une variable et à l’aide d’une syntaxe précise, fera la conversion attendue. Voici quelques exemples : </p>
+            <ul>
+                <li>Python : <code>str(mon_nombre)</code></li>
+                <li>Java : <code>(String) monNombre</code></li>
+            </ul>
+            <p>
+                La conversion implicite est moins évidente, car elle intervient lorsqu’une variable d’un certain type est utilisée dans une situation où elle devrait 
+                être d’un autre type. Le langage de programmation fera alors automatiquement la conversion, si possible. L’exemple ci-dessus en est un typique. Le 
+                bloc « regrouper » s’attend à deux phrases, or on lui donne un nombre. Pour régler ce conflit, Scratch convertit le nombre en phrase automatiquement.
+            </p>
+            <p>
+                Scratch ne possède pas de mécanisme de conversion explicite et ses règles de conversions implicites sont nombreuses et complexes, je ne les détaillerai 
+                donc pas ici. Vous pouvez en savoir plus ici : <a href="https://www.en.scratch-wiki.info/wiki/Casting">https://www.en.scratch-wiki.info/wiki/Casting</a>.
+            </p>
+            <h3>L'assignation de valeur</h3>
+            <p>Afin de donner une valeur à une variable dans Scratch, vous pouvez utiliser le bloc suivant :</p>
+            <div class="conteneur_image">
+                <img src="../../images/2_1_3_scratch_assigner_valeur.png">
+                <figcaption>Figure 5 : L'assignation de la valeur 5 à la variable A</figcaption>
+            </div>
+            <p>De plus, vous pouvez emprunter la valeur d’une autre variable en échangeant le champ de texte par une variable : </p>
+            <div class="conteneur_image">
+                <img src="../../images/2_1_3_scratch_assigner_valeur2.png">
+                <figcaption>Figure 6 : L'assignation de la valeur de la variable B à la variable A</figcaption>
+            </div>
+            <p>Ce passage de valeur a la particularité de conserver l’indépendance des deux variables. Ainsi, dans le programme suivant :</p>
+            <div class="conteneur_image">
+                <img src="../../images/2_1_3_scratch_passer_par_valeur_ex.png">
+                <figcaption>Figure 7 : Les deux variables restent indépendantes</figcaption>
+            </div>
+            <p>
+                A vaut 0 et B vaut 5 à la fin du programme, malgré qu’on ait mis la valeur de B à celle de A. Ce comportement peut vous sembler évident, mais certains 
+                langages traitent ce genre d’assignation différemment. Au lieu de demeurer indépendant, B devient lié à A et B vaudrait 0 à la fin de ce programme. 
+                Il est à noter que ce comportement n’est pas présent dans Scratch, mais gardez ce détail en tête pour les prochains chapitres.
+            </p>
+            <p>Avant de passer à la prochaine section, prenez un quiz pour tester vos apprentissages.</p>
+            <div class="conteneur_boutons_navigation">
+                <a href="1introduction.html"><button>< Précédent</button></a>
+                <a href="2quiz_variables.html"><button>Prendre le quiz ></button></a>
+            </div>
+        </main>
+    </body>
+</html>

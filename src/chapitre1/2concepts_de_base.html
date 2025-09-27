@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="../css/style_base.css">
+    </head>
+    <body>
+        <main>
+            <div class="conteneur_boutons_navigation">
+                <a href="1introduction.html"><button>< Précédent</button></a>
+                <a href="../chapitre2/1introduction.html"><button style="font-size: 1em;">Chapitre 2 : La programmation<br>de base avec Scratch ></button></a>
+            </div>
+            <h1>Chapitre 1</h1>
+            <h2>1.1 Concepts de base</h2>
+            <p>
+                Commençons par « qu’est-ce que la programmation ? ». Cette question peut vous sembler absurde, mais elle est importante pour bien comprendre ce
+                que vous faites en programmation. Certains imaginent qu’un programmeur ouvre un terminal, tape une suite de caractères magiques à l’apparence
+                vaudoue et en ressort une application de commande de nourriture en ligne. Ça, c’est du piratage informatique, pas de la programmation.
+            </p>
+            <p>Pour les besoins de ce tutoriel, nous définirons la programmation comme suit : </p>
+            <p style="
+                text-align: center;
+                font-size: 1.5em;
+                font-weight: bold;
+            ">
+                La <span style="color: green">spécification</span> d’une suite<br>
+                d’<span style="color: red">instructions atomiques</span> nécessaires<br>
+                à l'<span style="color:royalblue">achèvement d’une tâche</span>.
+            </p>
+            <p>Décortiquons cette pile de mots compliqués.</p>
+            <p>
+                Commençons par la fin, l'<span style="color: royalblue; font-style: italic;">achèvement d’une tâche</span>. Dans notre cas, une tâche est
+                n’importe quoi qui doit être fait. Passer une commande, écrire quelque chose à l’écran, faire avancer le robot, viser une cible, reconnaitre
+                des visages, calculer le résultat d’une formule mathématique, etc. Si votre programme fait quelque chose, c’est une tâche qu’il doit accomplir.
+                Ce qui est important à comprendre ici, c’est qu’une tâche peut généralement être décomposée en une série de petites tâches. Par exemple, vous
+                donnez une tâche à Alice : « va chercher du lait au dépanneur ». Pour accomplir cette tâche, Alice devra d’abord se déplacer jusqu’au dépanneur,
+                prendre le lait, payer le lait, se déplacer jusqu’à la maison et ranger le lait dans le frigo. On peut répéter l’expérience : pour prendre le lait,
+                Alice devra d’abord trouver le lait, se déplacer devant le berlingot, l’attraper, et le mettre dans son panier. On peut continuer plus loin : pour
+                trouver le lait, Alice devra se déplacer dans chaque allée, longer toute la longueur de l’allée et vérifier si chaque article correspond au lait
+                qu’elle cherche, jusqu’à ce que l’un d’entre eux corresponde. Notez que rien dans « va chercher du lait » n’implique la moindre chose à propos de
+                toutes les sous-tâches que je viens de vous décrire. Nulle part n’est-il indiqué que le lait se trouve au dépanneur, dans une allée, qu’il faudra
+                le payer ou même qu’il faudra s’y déplacer! Ce sont toutes des notions que nous avions avant même de poser la question, des notions sur lesquelles
+                la question se repose pour être plus courte et efficace.
+            </p>
+            <p>
+                Mais maintenant, imaginez qu’Alice soit un extraterrestre, ou tout simplement très idiote, et ne comprenne pas toutes ces notions que nous avions
+                avant de lui demander d’aller chercher du lait. Elle ne sait pas ce qu’est du lait, où l’on peut en trouver, comment s’y déplacer, ou même qu’il
+                faut le payer ! Pour pouvoir lui permettre d’accomplir cette tâche, il faudra lui expliquer tout ça dans les détails. C’est la
+                <span style="color: green; font-style: italic">spécification</span> de notre définition.
+            </p>
+            <p>
+                Finalement, vous vous demandez peut-être « mais à quel point est-ce qu’il faudra tout lui expliquer ? ». Pour répondre à cette question, rappelez-vous
+                que la question de base « va chercher du lait » fonctionnait tant qu’on est familier avec toutes les sous-tâches et toutes les notions qui y sont associées.
+                Puisque Alice n’est pas familière avec toutes ces notions, il faudra lui expliquer le premier niveau de sous-tâches. Si elle n’est pas familière avec le deuxième
+                niveau, il faudra le lui expliquer aussi, et ainsi de suite, jusqu’à ce qu’on arrive à un concept qu’elle comprend. C’est le principe
+                d’<span style="color: red; font-style: italic">instruction atomique</span>. Atomique ou atome viens du grec ancien <i>átomos</i>, qui veut dire <i>indivisible</i>
+                (et oui, c’est de là que vient le mot <i>atome</i>, « brique élémentaire de la matière »). Ainsi, lorsqu’on parle
+                d’<span style="color: red; font-style: italic">instructions atomiques</span>, on parle d’une instruction ou d’une tâche qui n’a pas besoin d’être décomposée en plus
+                petits morceaux. C’est un principe fondamental de la logique et des mathématiques, qu’on nomme <i>axiomes</i> dans ces domaines, car il existera toujours une instruction
+                ou une opération qui ne peut pas être décomposée en plus petits morceaux. Dans notre cas, nous utiliserons le terme
+                <span style="color: red; font-style: italic">instruction atomique</span>. Dans bien des cas, l’instruction <i>peut</i> être décomposée, mais elle est comprise et
+                exécutable par l’interlocuteur et n’a par conséquent pas <i>besoin</i> d’être décomposée.
+            </p>
+            <p>Vous l’aurez compris, remplacez Alice, qui ne comprend rien de rien, par votre ordinateur et vous avez le travail de programmeur. Récapitulons dans des termes plus simples : </p>
+            <p style="
+                text-align: center;
+                font-size: 1.5em;
+                font-weight: bold;
+            ">
+                La <span style="color: green">spécification</span> d’une suite<br>
+                d’<span style="color: red">instructions atomiques</span> nécessaires<br>
+                à l'<span style="color:royalblue">achèvement d’une tâche</span>.
+            </p>
+            <p>Deviens :</p>
+            <p style="
+                text-align: center;
+                font-size: 1.5em;
+                font-weight: bold;
+            ">
+                L'<span style="color: green">explication</span> d’une suite<br>
+                d’<span style="color: red">instructions de bases comprises par l'ordinateur</span> nécessaires<br>
+                à <span style="color:royalblue">faire ce que nous voulons qu'il fasse</span>.
+            </p>
+            <p>
+                Deux points importants ressortent de cette définition. Le premier : remarquez comment nulle part il n’est indiqué que cette <i>spécification</i> doit se faire dans un éditeur de 
+                texte. Il n’est même pas indiqué que les instructions doivent être sous forme de texte, ni même que les <i>instructions atomiques</i> doivent être adressées à un ordinateur. Bien 
+                qu’il est vrai que la très grande majorité de la programmation se fait de nos jours dans un éditeur de texte et vise un ordinateur, la programmation ne se limite pas à cette 
+                application spécifique. Elle est bien plus un mode de <i>réflexion</i> que de taper des caractères à l’écran.
+            </p>
+            <p>
+                Le deuxième point à ressortir vient du fait que cette définition exclue plusieurs éléments cruciaux du développement d’un logiciel. Notez que les notions de design, de structure et 
+                même simplement « est-ce que mon programme devrait faire ça ou plutôt ça ? » n'y sont pas présents. La tâche d’un programmeur est purement de décomposer une fonctionnalité dans ses 
+                éléments les plus simples afin de le faire exécuter par l’ordinateur, pas de décider quelle tâche doit être accomplie ou comment elle doit être accomplie. Ces questions sont réservées 
+                à l’ingénieur logiciel.
+            </p>
+            <h3>Les données et le code</h3>
+            <p>
+                Le deuxième concept important en programmation vient de la division entre les données et le code. Vous vous rendrez rapidement compte que la très grande majorité de votre travail 
+                consistera à traiter ces deux éléments. Les données sont toute information qui peut être utile à l'achèvement d’une tâche et le code est la suite d’instructions dont nous parlions 
+                plus haut. Vous remarquerez que le travail du code est toujours de manipuler et/ou de transformer les données. Crucialement, il est important de faire la distinction, dans votre 
+                programme, entre les données et le code, pour de multiples raisons que nous toucherons plus tard lorsque nous parlerons de structure. Pour l’instant, gardez en tête que cette 
+                distinction doit rester évidente dans votre esprit.
+            </p>
+            <p>
+                Ceci conclut l’introduction aux concepts de base. Dans le prochain chapitre, vous apprendrez les éléments de base de la programmation et vous verrez comment les assembler pour 
+                former des programmes simples à l’aide de Scratch.
+            </p>
+            <div class="conteneur_boutons_navigation">
+                <a href="1introduction.html"><button>< Précédent</button></a>
+                <a href="../chapitre2/1introduction.html"><button style="font-size: 1em;">Chapitre 2 : La programmation<br>de base avec Scratch ></button></a>
+            </div>
+        </main>
+    </body>
+</html>

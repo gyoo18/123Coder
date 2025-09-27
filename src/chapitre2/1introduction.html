@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="../css/style_base.css">
+    </head>
+    <body>
+        <main>
+            <div class="conteneur_boutons_navigation">
+                <a href="../chapitre1/2concepts_de_base.html"><button>< Précédent</button></a>
+                <a href="2les_variables.html"><button>Chapitre 2.1 : Les Variables ></button></a>
+            </div>
+            <h1>Chapitre 2</h1>
+            <h2>La programmation de base avec Scratch</h2>
+            <h3>Introduction</h3>
+            <p>
+                Ce chapitre a pour but de vous présenter les blocs élémentaires de la programmation, les manières de les imbriquer pour arriver à vos fins et développer votre sens 
+                de la décomposition de tâches.
+            </p>
+            <h3>Qu’est-ce que Scratch ?</h3>
+            <div class="conteneur_image_flottante" style="max-width:50%; max-height: 30em;">
+                <img src="../../images/2_0_0_Scratch_accueil.png">
+                <figcaption>Figure 1 : L'écran d'accueil de Scratch</figcaption>
+            </div>
+            <p>
+                Scratch est un site web et un langage de programmation par blocs développé par une équipe du MIT dans l’optique de promouvoir un environnement propice 
+                à l’apprentissage de la programmation. Ainsi, on peut y développer, partager et remixer des programmes en tout genre. Nous l’utiliserons pour apprendre 
+                les bases de la programmation, mais ne vous sentez pas gênés de pousser ses concepts plus loin si l’envie vous y prend.
+            </p>
+            <p>
+                Pour commencer, rendez-vous sur <a href="https://scratch.mit.edu/">https://scratch.mit.edu/</a>. Vous pouvez voir en bas de l’écran les projets d’autres 
+                utilisateurs. Si vous voulez enregistrer ou partager vos projets, vous aurez besoin de créer un compte. Cependant, nous n’en aurons pas besoin pour la 
+                suite de ce tutoriel.
+            </p>
+            <div class="conteneur_image">
+                <img src="../../images/2_0_0_scratch_creer_compte.png" style="max-width: 100%; max-height: 10em; float:inline-start;">
+                <figcaption>Figure 2 : Se créer un compte</figcaption>
+            </div>
+            <p>Pour nos besoins, nous commencerons par simplement créer un nouveau projet comme suit : </p>
+            <div class="conteneur_image">
+                <img src="../../images/2_0_0_Scratch_creer_projet.png" style="max-width: 100%; max-height: 10em; float:inline-start;">
+                <figcaption>Figure 3 : Créer un projet</figcaption>
+            </div>
+            <p>Vous aurez alors accès à l’écran suivant :</p>
+            <div class="conteneur_image">
+                <img src="../../images/2_0_0_scratch_projet_accueil.png" style="max-width: 100%; max-height: 30em; float:inline-start;">
+                <figcaption>Figure 4 : Page d'accueil d'un projet Scratch</figcaption>
+            </div>
+            <p>À votre gauche se trouve la liste des blocs que vous pouvez utiliser, ce sont vos <i>instructions atomiques</i>. Au centre se trouve votre toile, là où vous 
+                bâtirez votre programme. Pour ce faire, vous pouvez faire glisser un bloc du panneau de gauche sur votre toile. En haut à droite se trouve votre écran. Vous 
+                pouvez y voir un chat, la mascotte de Scratch et en bas se trouve les informations à propos des lutins. Dans scratch, tout est un lutin. Vous placez un lutin 
+                sur votre écran et le programme appartient à votre lutin, c’est son comportement, si vous voulez. Ainsi, les blocs qui vous sont montrés en ce moment sur votre 
+                gauche sont des blocs de mouvement, ils déplaceront le lutin. Au-dessus de l’écran se trouvent deux boutons : un drapeau vert et un panneau d’arrêt. Le drapeau 
+                sert à démarrer le programme et le panneau à l’arrêter s’il ne s’arrête pas lui-même.
+            </p>
+            <h3>Hello World</h3>
+            <p>
+                Le programme « Hello World » est un programme de base dans tous les langages de programmation. Il consiste simplement à afficher les mots « Hello World » à 
+                l’écran, d’une manière ou d’une autre. Il sert de point d’ancrage pour avoir un aperçu de la philosophie et de la complexité derrière le langage de programmation 
+                ainsi que de simples programmes de test, pour voir si tout fonctionne. La première version de votre programme, dans tout projet, devrait être le <i>Hello World</i>.
+            </p>
+            <p>Voici comment créer le <i>Hello World</i> dans Scratch :</p>
+            <div class="conteneur_image">
+                <img src="../../images/2_0_1_scratch_hello_world.png">
+                <figcaption>
+                    Figure 5 : Comment insérer un bloc « drapeau » : (1) Dans la barre de droite, naviguez vers la section « Événements », (2) cliquez sur le bloc présentant 
+                    un drapeau vert et (3) glissez-le sur l'espace de travail au centre.
+                </figcaption>
+            </div>
+            <p>Puis, attachez-y un bloc « dir »</p>
+            <div class="conteneur_image">
+                <img src="../../images/2_0_1_scratch_hello_world2.png">
+                <figcaption>
+                    Figure 6 : Comment insérer un bloc « dire » : (1) Dans la barre de droite, naviguez vers la section « Apparence », (2) cliquez sur le bloc indiquant 
+                    « dire » et (3) glissez-le sur l'espace de travail au centre.
+                </figcaption>
+            </div>
+            <p>Vous pouvez exécuter votre programme en appuyant sur le drapeau vert en haut de l’écran :</p>
+            <div class="conteneur_image">
+                <img src="../../images/2_0_1_scratch_hello_world3.png">
+                <figcaption>Figure 7 : Scratch qui dit « Bonjour! »</figcaption>
+            </div>
+            <div class="conteneur_image_flottante">
+                <img src="../../images/2_0_1_scratch_hello_world4.png">
+                <figcaption>Figure 8 : Le programme final</figcaption>
+            </div>
+            <p>Vous venez de compléter votre premier programme dans Scratch ! Décortiquons-le.</p>
+            <p>
+                Le premier bloc est le bloc Drapeau. Comme indiqué sur le bloc, il correspond à l’entrée du programme. Les instructions commenceront donc à être exécutées à 
+                partir de ce drapeau. Le deuxième bloc, le bloc « dire », exprime l’instruction d’afficher quelque chose d’écrit à l’écran, dans notre cas « Bonjour ! ». À 
+                noter qu’une instruction ne sera exécutée que si l’instruction avant est elle-même exécutée. Ainsi, si l’on détachait le bloc « dire » du bloc Drapeau, le 
+                chat ne dirait rien :
+            </p>
+            <div class="conteneur_image">
+                <img src="../../images/2_0_1_scratch_hello_world_brisé.png">
+                <figcaption>Figure 9 : Le programme ne fonctionne plus</figcaption>
+            </div>
+            <p>Ceci conclut l’introduction à Scratch. Dans la prochaine partie, nous explorerons les blocs de bases de la programmation, à commencer par les variables.</p>
+            <div class="conteneur_boutons_navigation">
+                <a href="../chapitre1/2concepts_de_base.html"><button>< Précédent</button></a>
+                <a href="2les_variables.html"><button>Chapitre 2.1 : Les Variables ></button></a>
+            </div>
+        </main>
+    </body>
+</html>
